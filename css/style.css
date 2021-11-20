@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(35, 35, 35);
+}
+
+/* Cabeçalho */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 60%;
+    margin: 10px;
+}
+header a{
+    text-decoration: none;
+    text-align: center;
+}
+
+header a p{
+    color: rgb(255, 233, 85);
+    text-shadow: black 3px 3px 3px;
+    font-size: 50px;
+    padding: 0px 20px;
+}
+
+header a p:hover{
+    color: white;
+    font-size: 55px;
+    transition: 200ms ease-in-out;
+}
+
+.jstxt{
+    font-size: 20px;
+    color: rgb(255, 233, 85);
+    text-shadow: black 3px 3px 3px;
+}
+
+#data{
+    font-size: 20px;
+    text-align: right;
+    margin: 5px 20px;
+}
+
+/* Conteúdo */
+
+.flex-container{
+    background-color: rgb(60, 60, 60);    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 3px rgb(255, 159, 0) solid;
+    border-bottom: 3px rgb(255, 159, 0) solid;
+    text-align: center;
+    font-size: 32px;
+    padding: 10px;
+    height: 400px;
+}
+
+.item a{
+    text-decoration: none;
+    color:white;
+    text-shadow: black 3px 3px 3px;
+}
+
+.item a:hover{
+    color: rgb(255, 233, 85);
+    font-size: 40px;
+    transition: 200ms ease-in-out;
+}
+
+.item img{
+    width: 300px;
+}
+
+.item h1{
+    color: rgb(255, 233, 85);
+    margin: 10px 0px;
+}
+
+.pedido{
+    margin: 20px ;
+    align-self: center;
+}
+
+.pedido button{
+    margin: auto;
+    background-color:rgb(60, 60, 60);    
+    border: 2px solid rgb(255, 159, 0);    
+    width: 30%;
+    height: 50px;
+
+    font-size: 32px;
+    color:white;
+    text-shadow: black 3px 3px 3px;    
+}
+
+.pedido button:hover{
+    background-color:rgb(255, 159, 0); 
+    border: 2px solid rgb(255, 233, 85);  
+    color:rgb(60, 60, 60);
+    text-shadow: white 3px 3px 3px;    
+    transition: 200ms ease-in-out;
+}
+
+/* Rodapé */
+
+footer{
+    background-color: rgb(60, 60, 60);    
+    color: white;
+    padding: 10px;
+}
+
+footer p{
+    text-align: center;
+}

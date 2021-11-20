@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <link rel="shortcut icon" href="img/ico.ico" type="image/x-icon">    
+    <title>Boi na Chapa</title>
+</head>
+<body>
+    <p id="data" class="jstxt">a</p>
+    <header>
+        <a href="index.html"><p>Boi na Chapa Hamburgueria</p></a>
+        <a href="index.html"><img src="img/logo.png" alt="não foi possível carregar imagem" class="logo"></a>
+        <p id="msgh" class="jstxt"></p>
+        <p id="hmsg" class="jstxt"></p>
+    </header>
+    <section>
+        <br>
+        <hr color="yellow">
+        <br>
+        <form>
+            <div class="flex">
+                <h3>Pedido Nº:</h3>
+                <h1>00010</h1>
+            </div>
+            <div class="flex">
+                <h3>Nome*:</h3>
+                <input type="text" id="nome">
+            </div>
+            <div class="flex">
+                <h3>Produto*:</h3>
+                <select id="produto">
+                    <option value="">---</option>
+                    <option value="bacon">Super X Bacon + Refri = R$20,00</option>
+                    <option value="salada">Super X Salada + Refri = R$25,00</option>
+                    <option value="tudo">Super X Bacon + Refri = R$35,00</option>
+                </select>
+            </div>
+            <div class="flex">
+                <h3>Quant*:</h3>
+                <input type="number" id="qt">
+            </div>
+            <div class="flex">
+                <h3>Valor:</h3>
+                <p id="custo"></p>
+            </div>
+            <center>
+            <div class="calcular">
+                <input type="button" onclick="calculaValor()" value="Atualizar Valores">       
+            </div>
+            </center>
+            <div class="flex">
+                <h3>Forma Pagto*:</h3>
+                <select id="pag">
+                    <option value="">---</option>
+                    <option value="cartao">Cartão (Débito/Crédito)</option>
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="vale refeicao">Vale Refeição</option>
+                </select>
+            </div>
+                <div class="pedir">
+                    <button type="submit" onclick="pedir()">Fazer o pedido!!!</button>
+                </div>
+        </form>
+    </section>
+    <footer>
+        <p>Desenvolvido por: Thiago Cardoso de Souza Lopes - 202120325 - 2021 - Todos os direitos reservados.</p>
+    </footer>
+<script src="js/mensagem.js"></script>
+<script src="js/hora.js"></script>
+<script src="js/form.js"></script>
+
+</body>
+</html>
